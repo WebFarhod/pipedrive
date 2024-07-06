@@ -1,0 +1,179 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Pipedrive Integration</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@pipedrive/app-extensions-sdk@0/dist/index.umd.js"></script>
+  </head>
+  <body>
+    <div class="container mx-auto p-4">
+      <div class="form-container bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <h1 class="text-xl font-bold mb-4">Client Details</h1>
+        <form id="dealForm">
+          <div class="section mb-4">
+            <div class="flex mb-4">
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mr-2"
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="First name"
+                required
+              />
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                type="text"
+                id="lastName"
+                name="lastName"
+                placeholder="Last name"
+                required
+              />
+            </div>
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Phone number"
+              required
+            />
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="section mb-4">
+            <select
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2"
+              name="type"
+              id="jobType"
+            >
+              <option value="type1">Type 1</option>
+              <option value="type2">Type 2</option>
+              <option value="type3">Type 3</option>
+              <option value="type4">Type 4</option>
+            </select>
+            <select
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2"
+              name="source"
+              id="jobSource"
+            >
+              <option value="source1">Source 1</option>
+              <option value="source2">Source 2</option>
+              <option value="source3">Source 3</option>
+              <option value="source4">Source 4</option>
+            </select>
+            <textarea
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2"
+              name="jobCommit"
+              id="jobCommit"
+              rows="4"
+              cols="50"
+              placeholder="Job description (optional)"
+            ></textarea>
+          </div>
+          <div class="section mb-4">
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2"
+              type="text"
+              name="address"
+              id="address"
+              placeholder="Address"
+            />
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2"
+              type="text"
+              name="city"
+              id="city"
+              placeholder="City"
+            />
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2"
+              type="text"
+              name="state"
+              id="state"
+              placeholder="State"
+            />
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2"
+              type="number"
+              name="zipCode"
+              id="zipCode"
+              placeholder="Zip Code"
+            />
+          </div>
+          <div class="section mb-4">
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2"
+              type="date"
+              name="date"
+              id="date"
+            />
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2"
+              type="time"
+              name="startTime"
+              id="startTime"
+            />
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2"
+              type="time"
+              name="endTime"
+              id="endTime"
+            />
+            <select
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              name="technician"
+              id="technician"
+            >
+              <option value="user1">User 1</option>
+              <option value="user2">User 2</option>
+              <option value="user3">User 3</option>
+              <option value="user4">User 4</option>
+            </select>
+          </div>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            type="submit"
+          >
+            Save Deal
+          </button>
+        </form>
+        <p id="statusMessage"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipedrive Integration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@pipedrive/app-extensions-sdk@0/dist/index.umd.js"></script>
+</head>
+<body>
+    <div class="container mx-auto p-4">
+        <div class="form-container bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <h1 class="text-xl font-bold mb-4">Client Details</h1>
+            <form id="dealForm">
+                <!-- Form Inputs -->
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Save Deal</button>
+            </form>
+            <p id="statusMessage"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
