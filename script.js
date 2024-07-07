@@ -63,7 +63,7 @@ document.getElementById('dealForm').addEventListener('submit', async function (e
         },
         {
             name: "phone",
-            field_type: "phtextone",
+            field_type: "phone",
             value: document.getElementById('phone').value,
         },
         {
