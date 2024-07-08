@@ -1,4 +1,4 @@
-const token = "431abef01fb4ce0b774bfef12944333f05e27837"
+const token = "your_token"
 
 
 async function ensureCustomField(fieldName, fieldType) {
